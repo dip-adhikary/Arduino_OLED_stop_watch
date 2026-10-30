@@ -33,10 +33,10 @@ The stopwatch uses the Arduino's built-in `millis()` function for time measureme
 | Pause Button | Digital Pin 12 |
 | OLED SDA | A4 |
 | OLED SCL | A5 |
-| OLED VCC | 5V (if supported by the module) |
+| OLED VCC | 3.3V or 5V (Whichever is suitable for your OLED) |
 | OLED GND | GND |
 
-Both push buttons are configured using the Arduino's internal pull-up resistors (`INPUT_PULLUP`).
+NOTE:Both push buttons are configured using the Arduino's internal pull-up resistors (`INPUT_PULLUP`).
 
 ## Software & Libraries
 
@@ -66,7 +66,8 @@ Both push buttons are configured using the Arduino's internal pull-up resistors 
 5. Select Arduino UNO as the target board.
 6. Select the appropriate COM port.
 7. Upload the code to the Arduino.
-8. Press the start button to operate the stopwatch.
+8. Once the code is uploaded, you will see a screen `CLICK TO START!`.
+9. Press the start button to operate the stopwatch.
 
 ## Concepts Explored
 
