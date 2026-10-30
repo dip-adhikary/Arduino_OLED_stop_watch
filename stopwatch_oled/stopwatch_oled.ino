@@ -3,7 +3,7 @@
 #include <Adafruit_SSD1306.h>
 #define width 128
 #define height 64
-Adafruit_SSD1306 dipoled(width,height,&Wire,-1);
+Adafruit_SSD1306 dipoled(width,height,&Wire,-1); //Object of the OLED
 int startbutton=2;
 int stopbutton=12;
 bool notpress=true;
@@ -18,7 +18,7 @@ bool press_check=true;
 void setup() {
   pinMode(startbutton,INPUT_PULLUP);
   pinMode (stopbutton,INPUT_PULLUP);
-  dipoled.begin(SSD1306_SWITCHCAPVCC,0x3C); //Objet of the OLED
+  dipoled.begin(SSD1306_SWITCHCAPVCC,0x3C);
   Serial.begin(9600);
 
 }
